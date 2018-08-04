@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041127CB20DD3BD600A91D98 /* GuestPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041127CA20DD3BD600A91D98 /* GuestPlayer.swift */; };
+		0416D4C02083DB10001F60C5 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416D4BF2083DB10001F60C5 /* Owner.swift */; };
+		041CDF9020813ACE00A439FD /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CDF8F20813ACE00A439FD /* Referee.swift */; };
+		04231D3F207DB42D005F34E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D3E207DB42D005F34E4 /* AppDelegate.swift */; };
+		04231D41207DB42D005F34E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D40207DB42D005F34E4 /* ViewController.swift */; };
+		04231D44207DB42D005F34E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04231D42207DB42D005F34E4 /* Main.storyboard */; };
+		04231D46207DB42E005F34E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04231D45207DB42E005F34E4 /* Assets.xcassets */; };
+		04231D49207DB42E005F34E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04231D47207DB42E005F34E4 /* LaunchScreen.storyboard */; };
+		04231D54207DB42E005F34E4 /* CowtownAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D53207DB42E005F34E4 /* CowtownAppTests.swift */; };
+		04231D5F207DB42E005F34E4 /* CowtownAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D5E207DB42E005F34E4 /* CowtownAppUITests.swift */; };
+		04231D6E207DB4CA005F34E4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D6D207DB4CA005F34E4 /* Person.swift */; };
+		04231D70207DBE40005F34E4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D6F207DBE40005F34E4 /* Player.swift */; };
+		04231D72207DBE4A005F34E4 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D71207DBE4A005F34E4 /* Employee.swift */; };
+		0429EFB020E609A1003AA9CD /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429EFAF20E609A1003AA9CD /* League.swift */; };
+		04400AB320E9DD7400B6FEC4 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04400AB220E9DD7400B6FEC4 /* Table.swift */; };
+		04C16C11208715D1007D5BF9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16C10208715D1007D5BF9 /* Team.swift */; };
+		04FA18B420E6D29800B05B8D /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA18B320E6D29800B05B8D /* CommonFunctions.swift */; };
+		95A2CA052088D3C8006F80CB /* FreeAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A2CA042088D3C8006F80CB /* FreeAgent.swift */; };
+		95A2CA072088DBA6006F80CB /* FreeAgents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A2CA062088DBA6006F80CB /* FreeAgents.swift */; };
+		95DE76302087C1DD00F282C7 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE762F2087C1DD00F282C7 /* Match.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04231D50207DB42E005F34E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04231D33207DB42D005F34E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04231D3A207DB42D005F34E4;
+			remoteInfo = CowtownApp;
+		};
+		04231D5B207DB42E005F34E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04231D33207DB42D005F34E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04231D3A207DB42D005F34E4;
+			remoteInfo = CowtownApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041127CA20DD3BD600A91D98 /* GuestPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestPlayer.swift; sourceTree = "<group>"; };
+		0416D4BF2083DB10001F60C5 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		041CDF8F20813ACE00A439FD /* Referee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Referee.swift; sourceTree = "<group>"; };
+		04231D3B207DB42D005F34E4 /* CowtownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CowtownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04231D3E207DB42D005F34E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04231D40207DB42D005F34E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04231D43207DB42D005F34E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04231D45207DB42E005F34E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04231D48207DB42E005F34E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04231D4A207DB42E005F34E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04231D4F207DB42E005F34E4 /* CowtownAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowtownAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04231D53207DB42E005F34E4 /* CowtownAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowtownAppTests.swift; sourceTree = "<group>"; };
+		04231D55207DB42E005F34E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04231D5A207DB42E005F34E4 /* CowtownAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowtownAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04231D5E207DB42E005F34E4 /* CowtownAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowtownAppUITests.swift; sourceTree = "<group>"; };
+		04231D60207DB42E005F34E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04231D6D207DB4CA005F34E4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		04231D6F207DBE40005F34E4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		04231D71207DBE4A005F34E4 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		0429EFAF20E609A1003AA9CD /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		04400AB220E9DD7400B6FEC4 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		04C16C10208715D1007D5BF9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		04FA18B320E6D29800B05B8D /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		95A2CA042088D3C8006F80CB /* FreeAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAgent.swift; sourceTree = "<group>"; };
+		95A2CA062088DBA6006F80CB /* FreeAgents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAgents.swift; sourceTree = "<group>"; };
+		95DE762F2087C1DD00F282C7 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04231D38207DB42D005F34E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04231D4C207DB42E005F34E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04231D57207DB42E005F34E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041CDF9620813EEE00A439FD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04231D6D207DB4CA005F34E4 /* Person.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04231D32207DB42D005F34E4 = {
+			isa = PBXGroup;
+			children = (
+				04FA18B220E6D28200B05B8D /* Common Classes */,
+				0429EFAE20E60991003AA9CD /* League Classes */,
+				95DE762E2087C1BE00F282C7 /* Match Classes */,
+				04C16C0F208715BA007D5BF9 /* Team classes */,
+				95F5A4142085351C002C9268 /* Employee child classes */,
+				041CDF9620813EEE00A439FD /* Protocols */,
+				04231D6C207DB4B8005F34E4 /* People Classes */,
+				04231D3D207DB42D005F34E4 /* CowtownApp */,
+				04231D52207DB42E005F34E4 /* CowtownAppTests */,
+				04231D5D207DB42E005F34E4 /* CowtownAppUITests */,
+				04231D3C207DB42D005F34E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04231D3C207DB42D005F34E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04231D3B207DB42D005F34E4 /* CowtownApp.app */,
+				04231D4F207DB42E005F34E4 /* CowtownAppTests.xctest */,
+				04231D5A207DB42E005F34E4 /* CowtownAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04231D3D207DB42D005F34E4 /* CowtownApp */ = {
+			isa = PBXGroup;
+			children = (
+				04231D3E207DB42D005F34E4 /* AppDelegate.swift */,
+				04231D40207DB42D005F34E4 /* ViewController.swift */,
+				04231D42207DB42D005F34E4 /* Main.storyboard */,
+				04231D45207DB42E005F34E4 /* Assets.xcassets */,
+				04231D47207DB42E005F34E4 /* LaunchScreen.storyboard */,
+				04231D4A207DB42E005F34E4 /* Info.plist */,
+			);
+			path = CowtownApp;
+			sourceTree = "<group>";
+		};
+		04231D52207DB42E005F34E4 /* CowtownAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				04231D53207DB42E005F34E4 /* CowtownAppTests.swift */,
+				04231D55207DB42E005F34E4 /* Info.plist */,
+			);
+			path = CowtownAppTests;
+			sourceTree = "<group>";
+		};
+		04231D5D207DB42E005F34E4 /* CowtownAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04231D5E207DB42E005F34E4 /* CowtownAppUITests.swift */,
+				04231D60207DB42E005F34E4 /* Info.plist */,
+			);
+			path = CowtownAppUITests;
+			sourceTree = "<group>";
+		};
+		04231D6C207DB4B8005F34E4 /* People Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04231D6F207DBE40005F34E4 /* Player.swift */,
+				04231D71207DBE4A005F34E4 /* Employee.swift */,
+				0416D4BF2083DB10001F60C5 /* Owner.swift */,
+				95A2CA042088D3C8006F80CB /* FreeAgent.swift */,
+				041127CA20DD3BD600A91D98 /* GuestPlayer.swift */,
+			);
+			path = "People Classes";
+			sourceTree = "<group>";
+		};
+		0429EFAE20E60991003AA9CD /* League Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0429EFAF20E609A1003AA9CD /* League.swift */,
+				04400AB220E9DD7400B6FEC4 /* Table.swift */,
+			);
+			path = "League Classes";
+			sourceTree = "<group>";
+		};
+		04C16C0F208715BA007D5BF9 /* Team classes */ = {
+			isa = PBXGroup;
+			children = (
+				04C16C10208715D1007D5BF9 /* Team.swift */,
+				95A2CA062088DBA6006F80CB /* FreeAgents.swift */,
+			);
+			path = "Team classes";
+			sourceTree = "<group>";
+		};
+		04FA18B220E6D28200B05B8D /* Common Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04FA18B320E6D29800B05B8D /* CommonFunctions.swift */,
+			);
+			path = "Common Classes";
+			sourceTree = "<group>";
+		};
+		95DE762E2087C1BE00F282C7 /* Match Classes */ = {
+			isa = PBXGroup;
+			children = (
+				95DE762F2087C1DD00F282C7 /* Match.swift */,
+			);
+			path = "Match Classes";
+			sourceTree = "<group>";
+		};
+		95F5A4142085351C002C9268 /* Employee child classes */ = {
+			isa = PBXGroup;
+			children = (
+				041CDF8F20813ACE00A439FD /* Referee.swift */,
+			);
+			path = "Employee child classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04231D3A207DB42D005F34E4 /* CowtownApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04231D63207DB42E005F34E4 /* Build configuration list for PBXNativeTarget "CowtownApp" */;
+			buildPhases = (
+				04231D37207DB42D005F34E4 /* Sources */,
+				04231D38207DB42D005F34E4 /* Frameworks */,
+				04231D39207DB42D005F34E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CowtownApp;
+			productName = CowtownApp;
+			productReference = 04231D3B207DB42D005F34E4 /* CowtownApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04231D4E207DB42E005F34E4 /* CowtownAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04231D66207DB42E005F34E4 /* Build configuration list for PBXNativeTarget "CowtownAppTests" */;
+			buildPhases = (
+				04231D4B207DB42E005F34E4 /* Sources */,
+				04231D4C207DB42E005F34E4 /* Frameworks */,
+				04231D4D207DB42E005F34E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04231D51207DB42E005F34E4 /* PBXTargetDependency */,
+			);
+			name = CowtownAppTests;
+			productName = CowtownAppTests;
+			productReference = 04231D4F207DB42E005F34E4 /* CowtownAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04231D59207DB42E005F34E4 /* CowtownAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04231D69207DB42E005F34E4 /* Build configuration list for PBXNativeTarget "CowtownAppUITests" */;
+			buildPhases = (
+				04231D56207DB42E005F34E4 /* Sources */,
+				04231D57207DB42E005F34E4 /* Frameworks */,
+				04231D58207DB42E005F34E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04231D5C207DB42E005F34E4 /* PBXTargetDependency */,
+			);
+			name = CowtownAppUITests;
+			productName = CowtownAppUITests;
+			productReference = 04231D5A207DB42E005F34E4 /* CowtownAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04231D33207DB42D005F34E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Robert.Vera05;
+				TargetAttributes = {
+					04231D3A207DB42D005F34E4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					04231D4E207DB42E005F34E4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 04231D3A207DB42D005F34E4;
+					};
+					04231D59207DB42E005F34E4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 04231D3A207DB42D005F34E4;
+					};
+				};
+			};
+			buildConfigurationList = 04231D36207DB42D005F34E4 /* Build configuration list for PBXProject "CowtownApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04231D32207DB42D005F34E4;
+			productRefGroup = 04231D3C207DB42D005F34E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04231D3A207DB42D005F34E4 /* CowtownApp */,
+				04231D4E207DB42E005F34E4 /* CowtownAppTests */,
+				04231D59207DB42E005F34E4 /* CowtownAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04231D39207DB42D005F34E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04231D49207DB42E005F34E4 /* LaunchScreen.storyboard in Resources */,
+				04231D46207DB42E005F34E4 /* Assets.xcassets in Resources */,
+				04231D44207DB42D005F34E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04231D4D207DB42E005F34E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04231D58207DB42E005F34E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04231D37207DB42D005F34E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04231D70207DBE40005F34E4 /* Player.swift in Sources */,
+				04231D6E207DB4CA005F34E4 /* Person.swift in Sources */,
+				95DE76302087C1DD00F282C7 /* Match.swift in Sources */,
+				95A2CA052088D3C8006F80CB /* FreeAgent.swift in Sources */,
+				0416D4C02083DB10001F60C5 /* Owner.swift in Sources */,
+				041127CB20DD3BD600A91D98 /* GuestPlayer.swift in Sources */,
+				04400AB320E9DD7400B6FEC4 /* Table.swift in Sources */,
+				04FA18B420E6D29800B05B8D /* CommonFunctions.swift in Sources */,
+				0429EFB020E609A1003AA9CD /* League.swift in Sources */,
+				041CDF9020813ACE00A439FD /* Referee.swift in Sources */,
+				04C16C11208715D1007D5BF9 /* Team.swift in Sources */,
+				04231D41207DB42D005F34E4 /* ViewController.swift in Sources */,
+				04231D72207DBE4A005F34E4 /* Employee.swift in Sources */,
+				95A2CA072088DBA6006F80CB /* FreeAgents.swift in Sources */,
+				04231D3F207DB42D005F34E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04231D4B207DB42E005F34E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04231D54207DB42E005F34E4 /* CowtownAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04231D56207DB42E005F34E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04231D5F207DB42E005F34E4 /* CowtownAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04231D51207DB42E005F34E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04231D3A207DB42D005F34E4 /* CowtownApp */;
+			targetProxy = 04231D50207DB42E005F34E4 /* PBXContainerItemProxy */;
+		};
+		04231D5C207DB42E005F34E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04231D3A207DB42D005F34E4 /* CowtownApp */;
+			targetProxy = 04231D5B207DB42E005F34E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04231D42207DB42D005F34E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04231D43207DB42D005F34E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04231D47207DB42E005F34E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04231D48207DB42E005F34E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04231D61207DB42E005F34E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04231D62207DB42E005F34E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04231D64207DB42E005F34E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YLL7XPLHV;
+				INFOPLIST_FILE = CowtownApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Robert.Vera05.CowtownApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04231D65207DB42E005F34E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YLL7XPLHV;
+				INFOPLIST_FILE = CowtownApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Robert.Vera05.CowtownApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04231D67207DB42E005F34E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YLL7XPLHV;
+				INFOPLIST_FILE = CowtownAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Robert.Vera05.CowtownAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CowtownApp.app/CowtownApp";
+			};
+			name = Debug;
+		};
+		04231D68207DB42E005F34E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YLL7XPLHV;
+				INFOPLIST_FILE = CowtownAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Robert.Vera05.CowtownAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CowtownApp.app/CowtownApp";
+			};
+			name = Release;
+		};
+		04231D6A207DB42E005F34E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YLL7XPLHV;
+				INFOPLIST_FILE = CowtownAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Robert.Vera05.CowtownAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CowtownApp;
+			};
+			name = Debug;
+		};
+		04231D6B207DB42E005F34E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YLL7XPLHV;
+				INFOPLIST_FILE = CowtownAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Robert.Vera05.CowtownAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CowtownApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04231D36207DB42D005F34E4 /* Build configuration list for PBXProject "CowtownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04231D61207DB42E005F34E4 /* Debug */,
+				04231D62207DB42E005F34E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04231D63207DB42E005F34E4 /* Build configuration list for PBXNativeTarget "CowtownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04231D64207DB42E005F34E4 /* Debug */,
+				04231D65207DB42E005F34E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04231D66207DB42E005F34E4 /* Build configuration list for PBXNativeTarget "CowtownAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04231D67207DB42E005F34E4 /* Debug */,
+				04231D68207DB42E005F34E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04231D69207DB42E005F34E4 /* Build configuration list for PBXNativeTarget "CowtownAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04231D6A207DB42E005F34E4 /* Debug */,
+				04231D6B207DB42E005F34E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04231D33207DB42D005F34E4 /* Project object */;
+}
