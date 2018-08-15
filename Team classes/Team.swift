@@ -183,4 +183,14 @@ class Team: NSObject {
     func getDivision() -> NSString {
         return division
     }
+    
+    func setName(teamName: NSString)
+    {
+        self.teamName = teamName
+    }
+    
+    func getName() -> NSString
+    {
+        return teamName
+    }
 }

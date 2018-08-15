@@ -17,6 +17,7 @@ class League: NSObject
     private var season: NSString
     private var champion: Team?
     private var runnerUp: Team?
+    private var referees: [Referee]?
     
     init(leagueName: NSString, division: NSString, season: NSString)
     {
@@ -42,7 +43,7 @@ class League: NSObject
             // display an alert to the user if the
             // team already exists in the league
             // have to do this from the viewcontroller in order to pass to common function
-            CommonFunctions.displayError(alertTitle: "", alertMessage: "", viewController: viewController)
+            CommonFunctions.displayError(alertTitle: "ERROR:", alertMessage: "Team has already been added to League.", viewController: viewController)
         }
         
     }
@@ -134,18 +135,30 @@ class League: NSObject
     func generateMatches() -> [Match]
     {
         if teams.capacity > 1 {
-            for _ in 0...teams.count
+            // recursively go through each team and make them a match with every team, then randomize the games.
+            for i in 0...teams.count
             {
-                //Select a random team for the home team
-                let homeTeam = teams[CommonFunctions.randomNumber(boundary: teams.count)]
-                //Remove the team from the teams array so that it cannot be selected again
-                teams.remove(at: teams.index(of: homeTeam)!)
-                //Select a random team for the away team
-                let awayTeam = teams[CommonFunctions.randomNumber(boundary: teams.count)]
-                
+                createMatch(team: teams[i])
             }
         }
         
         return matches
+    }
+    
+    
+    func createMatch(team: Team)
+    {
+        for awayTeam in teams
+        {
+            if team.getName() !== awayTeam.getName()
+            {
+                let match = Match.init(homeTeam: team, awayTeam: awayTeam,
+                                       referee: referees![CommonFunctions.randomNumber(boundary: (referees?.count)!)], scheduledDate: NSDate.init())
+                
+                // add the match to the list of all matches for all teams
+                matches.append(match)
+            }
+            
+        }
     }
 }
