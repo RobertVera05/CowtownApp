@@ -29,4 +29,14 @@ class CommonFunctions
         return randomNumber.nextInt(upperBound: boundary)
     }
     
+    ///Function that takes an array of matches and swaps out positions inside of the matches array using random numbers for positions
+    static func rearrangeRandomMatches(matches: inout [Match]) -> [Match]
+    {
+        for _ in 0...matches.count
+        {
+            matches.swapAt(randomNumber(boundary: matches.count), randomNumber(boundary: matches.count))
+        }
+        
+        return matches
+    }
 }
