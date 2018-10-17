@@ -138,7 +138,7 @@ class League: NSObject
             // recursively go through each team and make them a match with every team, then randomize the games.
             for i in 0...teams.count
             {
-                createMatch(team: teams[i])
+                createMatches(team: teams[i])
             }
         }
         
@@ -146,7 +146,7 @@ class League: NSObject
     }
     
     
-    func createMatch(team: Team)
+    func createMatches(team: Team)
     {
         for awayTeam in teams
         {

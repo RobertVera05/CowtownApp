@@ -1,5 +1,6 @@
 //
 //  Common.swift
+//  List of functions that can be used across the app.
 //  CowtownApp
 //
 //  Created by Robert Vera on 6/29/18.
