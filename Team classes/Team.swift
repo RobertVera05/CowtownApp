@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Team: NSObject {
     private var teamName: NSString
@@ -25,9 +26,10 @@ class Team: NSObject {
     private var goalsFor: Int
     private var goalsAgainst: Int
     private var goalDifferential: Int
+    private var teamPicture: UIImage?
     
     init(teamName: NSString, teamCaptain: Player, jerseyColorHome: NSString,
-         jerseyColorAway: NSString, division: NSString) {
+         jerseyColorAway: NSString, division: NSString, teamPicture: UIImage) {
         self.teamName = teamName
         self.roster = [Player]()
         self.teamCaptain = teamCaptain
@@ -43,6 +45,7 @@ class Team: NSObject {
         self.goalsFor = 0
         self.goalsAgainst = 0
         self.goalDifferential = 0
+        self.teamPicture = teamPicture
     }
     
     func getWins() -> Int {
@@ -119,6 +122,10 @@ class Team: NSObject {
         return activeTeam
     }
     
+    func activateTeam() {
+        activeTeam = true
+    }
+    
     func deactivateTeam() {
         activeTeam = false
     }
@@ -173,7 +180,7 @@ class Team: NSObject {
     }
     
     func getGoalDifferential() -> Int {
-        return goalsFor - goalsAgainst
+        return getGoalsFor() - getGoalsAgainst()
     }
     
     func setDivision(division: NSString) {
@@ -192,5 +199,38 @@ class Team: NSObject {
     func getName() -> NSString
     {
         return teamName
+    }
+    
+    func setTeamPicture(teamPicture: UIImage)
+    {
+        self.teamPicture = teamPicture
+    }
+    
+    func getTeamPicture() -> UIImage
+    {
+        return teamPicture!
+    }
+    
+    func getRedCards() -> Int {
+        var redCards = 0
+        
+        for player in roster
+        {
+            redCards += player.getRedCards()
+        }
+        
+        return redCards
+    }
+    
+    func getYellowCards() -> Int
+    {
+        var yellowCards = 0
+        
+        for player in roster
+        {
+            yellowCards += player.getYellowCards()
+        }
+        
+        return yellowCards
     }
 }

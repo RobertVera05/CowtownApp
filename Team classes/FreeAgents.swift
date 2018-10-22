@@ -24,6 +24,7 @@ class FreeAgents: NSObject {
         {
             //TODO: Throw an error message saying that
             //the user is already in the free agents list
+            //CommonFunctions.displayError(alertTitle: "Player Exists", alertMessage: "", viewController: )
         }
     }
     

@@ -23,6 +23,8 @@ class Player: NSObject, Person {
     internal var gender: NSString
     internal var amountPaid: Int
     internal var goalsScored: Int
+    private var redCards: Int
+    private var yellowCards: Int
     
     init(firstName: NSString, lastName: NSString, middleName: NSString?, address: NSString,
          dateOfBirth: NSDate, age: Int, phoneNumber: NSString, email: NSString?, pictureId: UIImage,
@@ -40,6 +42,8 @@ class Player: NSObject, Person {
         self.amountPaid = amountPaid
         self.gender = gender
         self.goalsScored = 0
+        self.redCards = 0
+        self.yellowCards = 0
     }
     
     func getFirstName() -> NSString {
@@ -144,6 +148,36 @@ class Player: NSObject, Person {
     
     func setGoalsScored(goalsScored: Int) {
         self.goalsScored = goalsScored
+    }
+    
+    func addYellowCards()
+    {
+        self.yellowCards += 1
+    }
+    
+    func clearYellowCards()
+    {
+        self.yellowCards = 0
+    }
+    
+    func getYellowCards() -> Int
+    {
+        return yellowCards
+    }
+    
+    func addRedCards()
+    {
+        self.redCards += 1
+    }
+    
+    func clearRedCards()
+    {
+        self.redCards = 0
+    }
+    
+    func getRedCards() -> Int
+    {
+        return redCards
     }
     
 }
