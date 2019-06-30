@@ -1,0 +1,16 @@
+projects:
+  cowtownapp:
+    schemaPath: graphql/schema.json
+    includes:
+      - graphql/**/*.graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: swift
+        generatedFileName: API.swift
+        docsFilePath: graphql
+        graphQLApiId: zyb36j5l4jgixdbre7tb2ildn4
+      endpoints:
+        prod: >-
+          https://s674ngxyxfc6jar7rxhisesjne.appsync-api.us-east-1.amazonaws.com/graphql

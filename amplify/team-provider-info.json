@@ -1,0 +1,14 @@
+{
+    "ios": {
+        "awscloudformation": {
+            "AuthRoleName": "cowtownapp-20190626192655-authRole",
+            "UnauthRoleArn": "arn:aws:iam::964317467185:role/cowtownapp-20190626192655-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::964317467185:role/cowtownapp-20190626192655-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "cowtownapp-20190626192655-deployment",
+            "UnauthRoleName": "cowtownapp-20190626192655-unauthRole",
+            "StackName": "cowtownapp-20190626192655",
+            "StackId": "arn:aws:cloudformation:us-east-1:964317467185:stack/cowtownapp-20190626192655/45916140-9872-11e9-843e-1297d6a5b478"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+framework module Pods_CowtownAppTests {
+  umbrella header "Pods-CowtownAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

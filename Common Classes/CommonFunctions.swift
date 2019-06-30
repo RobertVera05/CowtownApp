@@ -40,4 +40,9 @@ class CommonFunctions
         
         return matches
     }
+    
+    static func addUserToDatabase()
+    {
+        
+    }
 }
