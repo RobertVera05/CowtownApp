@@ -139,7 +139,7 @@ class Team: NSObject {
     }
     
     func removePlayer(player: Player) {
-        let playerPosition = roster.index(of: player)
+        let playerPosition = roster.firstIndex(of: player)
         roster.remove(at: playerPosition!)
     }
     
@@ -148,7 +148,7 @@ class Team: NSObject {
     }
     
     func removeSuspendedPlayer(suspendedPlayer: Player) {
-        let playerPosition = suspendedPlayers?.index(of: suspendedPlayer)
+        let playerPosition = suspendedPlayers?.firstIndex(of: suspendedPlayer)
         roster.remove(at: playerPosition!)
     }
     

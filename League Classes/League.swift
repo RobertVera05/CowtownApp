@@ -50,7 +50,7 @@ class League: NSObject
     
     func removeTeam(team: Team)
     {
-        let position = teams.index(of: team)
+        let position = teams.firstIndex(of: team)
         teams.remove(at: position!)
     }
     
@@ -70,7 +70,7 @@ class League: NSObject
     
     func removeMatch(match: Match)
     {
-        let position = matches.index(of: match)
+        let position = matches.firstIndex(of: match)
         matches.remove(at: position!)
     }
     

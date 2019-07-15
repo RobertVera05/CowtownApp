@@ -29,7 +29,7 @@ class FreeAgents: NSObject {
     }
     
     func removeFreeAgent(freeAgent: Player) {
-        let position = freeAgents.index(of: freeAgent)
+        let position = freeAgents.firstIndex(of: freeAgent)
         freeAgents.remove(at: position!)
     }
     

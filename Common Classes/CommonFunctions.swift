@@ -16,8 +16,8 @@ class CommonFunctions
     static func displayError(alertTitle: String, alertMessage: String, viewController: ViewController)
     {
         let alertController = UIAlertController(title: alertTitle,
-                                                message: alertMessage, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,
+                                                message: alertMessage, preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default,
                                                 handler: nil))
         viewController.present(alertController, animated: true, completion: nil)
     }
