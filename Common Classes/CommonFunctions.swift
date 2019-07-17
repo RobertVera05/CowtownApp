@@ -10,9 +10,12 @@
 import Foundation
 import GameplayKit
 import UIKit
+import AWSAppSync
 
 class CommonFunctions
 {
+    static var appSyncClient: AWSAppSyncClient?
+    
     static func displayError(alertTitle: String, alertMessage: String, viewController: ViewController)
     {
         let alertController = UIAlertController(title: alertTitle,
@@ -44,5 +47,32 @@ class CommonFunctions
     static func addUserToDatabase()
     {
         
+    }
+    
+    ///Function to query a player's information from the aws database
+    static func queryPlayer(player: Player)
+    {
+        appSyncClient?.fetch(query: ListTodosQuery(), cachePolicy: .returnCacheDataAndFetch) {(result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+                return
+            }
+            result?.data?.listTodos?.items!.forEach { print(($0?.name)! + " " + ($0?.description)!) }
+        }
+    }
+    
+    ///Function to add a player to the aws database
+    static func addPlayer(player: Player)
+    {
+        let mutationInput = CreateTodoInput(name: "Use AppSync", description:"Realtime and Offline")
+        appSyncClient?.perform(mutation: CreateTodoMutation(input: mutationInput)) { (result, error) in
+            if let error = error as? AWSAppSyncClientError {
+                print("Error occurred: \(error.localizedDescription )")
+            }
+            if let resultError = result?.errors {
+                print("Error saving the item on server: \(resultError)")
+                return
+            }
+        }
     }
 }
