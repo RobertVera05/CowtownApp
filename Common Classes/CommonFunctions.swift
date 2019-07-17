@@ -75,4 +75,10 @@ class CommonFunctions
             }
         }
     }
+    
+    ///Function to remove a player from the aws database
+    static func removePlayer(player: Player)
+    {
+        
+    }
 }
