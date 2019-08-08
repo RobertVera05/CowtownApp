@@ -10,6 +10,7 @@
 import Foundation
 import GameplayKit
 import UIKit
+import FirebaseAuth
 
 class CommonFunctions
 {
@@ -42,32 +43,28 @@ class CommonFunctions
         return matches
     }
     
-    static func addUserToDatabase()
+    ///Function to add a player to the firebase database
+    static func addNewUser(email: String, password: String)
     {
-        
+        Auth.auth().signIn(withEmail: email, password: password, completion: nil)
     }
     
-    ///Function to query a player's information from the aws database
-    static func queryPlayer(player: Player)
+    ///Function to sign in a player into the firebase database
+    static func signInUser(email: String, password: String)
     {
-        
+        Auth.auth().signIn(withEmail: email, password: password, completion: nil)
     }
     
-    ///Function to add a player to the aws database
-    static func addPlayer(player: Player)
+    ///Function to sign out a player from the firebase database
+    static func signOutUser()
     {
-        
-    }
-    
-    ///Function to remove a player from the aws database
-    static func removePlayer(player: Player)
-    {
-        
-    }
-    
-    //Function to verify user's credentials to the app
-    static func authenticatePlayer(username: String, password: String)
-    {
-        
+        let firebaseAuth = Auth.auth()
+        do
+        {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError
+        {
+            print("Error signing out: %@", signOutError)
+        }
     }
 }

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401635222F9F4D2001F72F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0401635122F9F4D2001F72F9 /* GoogleService-Info.plist */; };
 		041127CB20DD3BD600A91D98 /* GuestPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041127CA20DD3BD600A91D98 /* GuestPlayer.swift */; };
 		0416D4C02083DB10001F60C5 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416D4BF2083DB10001F60C5 /* Owner.swift */; };
 		041CDF9020813ACE00A439FD /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CDF8F20813ACE00A439FD /* Referee.swift */; };
@@ -22,7 +23,6 @@
 		04231D72207DBE4A005F34E4 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D71207DBE4A005F34E4 /* Employee.swift */; };
 		0429EFB020E609A1003AA9CD /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429EFAF20E609A1003AA9CD /* League.swift */; };
 		04400AB320E9DD7400B6FEC4 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04400AB220E9DD7400B6FEC4 /* Table.swift */; };
-		048102EC22F8A41B00D0AB7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048102EB22F8A41A00D0AB7C /* GoogleService-Info.plist */; };
 		04C16C11208715D1007D5BF9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16C10208715D1007D5BF9 /* Team.swift */; };
 		04FA18B420E6D29800B05B8D /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA18B320E6D29800B05B8D /* CommonFunctions.swift */; };
 		79D5EC414DBCA8622E39C09F /* Pods_CowtownApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8967490AB496FE3FCD336D09 /* Pods_CowtownApp.framework */; };
@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0401635122F9F4D2001F72F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		041127CA20DD3BD600A91D98 /* GuestPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestPlayer.swift; sourceTree = "<group>"; };
 		0416D4BF2083DB10001F60C5 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		041CDF8F20813ACE00A439FD /* Referee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Referee.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		04231D71207DBE4A005F34E4 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		0429EFAF20E609A1003AA9CD /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		04400AB220E9DD7400B6FEC4 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
-		048102EB22F8A41A00D0AB7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04C16C10208715D1007D5BF9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		04FA18B320E6D29800B05B8D /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		26F7C93E79E0489696124A0D /* Pods_CowtownAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CowtownAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +128,7 @@
 		04231D32207DB42D005F34E4 = {
 			isa = PBXGroup;
 			children = (
-				048102EB22F8A41A00D0AB7C /* GoogleService-Info.plist */,
+				0401635122F9F4D2001F72F9 /* GoogleService-Info.plist */,
 				04FA18B220E6D28200B05B8D /* Common Classes */,
 				0429EFAE20E60991003AA9CD /* League Classes */,
 				95DE762E2087C1BE00F282C7 /* Match Classes */,
@@ -234,7 +234,6 @@
 				893C44094204E73B184BFEE6 /* Pods-CowtownAppUITests.debug.xcconfig */,
 				CA165CAD2EBF98130450AAE6 /* Pods-CowtownAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -376,7 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04231D49207DB42E005F34E4 /* LaunchScreen.storyboard in Resources */,
-				048102EC22F8A41B00D0AB7C /* GoogleService-Info.plist in Resources */,
+				0401635222F9F4D2001F72F9 /* GoogleService-Info.plist in Resources */,
 				04231D46207DB42E005F34E4 /* Assets.xcassets in Resources */,
 				04231D44207DB42D005F34E4 /* Main.storyboard in Resources */,
 			);
