@@ -8,6 +8,7 @@ target 'CowtownApp' do
   # Pods for CowtownApp
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'CowtownAppTests' do
     inherit! :search_paths

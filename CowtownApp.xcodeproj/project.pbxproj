@@ -23,6 +23,7 @@
 		04231D72207DBE4A005F34E4 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04231D71207DBE4A005F34E4 /* Employee.swift */; };
 		0429EFB020E609A1003AA9CD /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429EFAF20E609A1003AA9CD /* League.swift */; };
 		04400AB320E9DD7400B6FEC4 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04400AB220E9DD7400B6FEC4 /* Table.swift */; };
+		0479B435232A15AA001AE5DA /* CowtownSoccerLogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0479B434232A15AA001AE5DA /* CowtownSoccerLogo.gif */; };
 		04C16C11208715D1007D5BF9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16C10208715D1007D5BF9 /* Team.swift */; };
 		04FA18B420E6D29800B05B8D /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA18B320E6D29800B05B8D /* CommonFunctions.swift */; };
 		79D5EC414DBCA8622E39C09F /* Pods_CowtownApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8967490AB496FE3FCD336D09 /* Pods_CowtownApp.framework */; };
@@ -73,6 +74,7 @@
 		04231D71207DBE4A005F34E4 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		0429EFAF20E609A1003AA9CD /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		04400AB220E9DD7400B6FEC4 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		0479B434232A15AA001AE5DA /* CowtownSoccerLogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CowtownSoccerLogo.gif; sourceTree = "<group>"; };
 		04C16C10208715D1007D5BF9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		04FA18B320E6D29800B05B8D /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		26F7C93E79E0489696124A0D /* Pods_CowtownAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CowtownAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,8 @@
 		04231D32207DB42D005F34E4 = {
 			isa = PBXGroup;
 			children = (
+				0479B433232A150E001AE5DA /* Images */,
+				0479B432232A1504001AE5DA /* New Group */,
 				0401635122F9F4D2001F72F9 /* GoogleService-Info.plist */,
 				04FA18B220E6D28200B05B8D /* Common Classes */,
 				0429EFAE20E60991003AA9CD /* League Classes */,
@@ -205,6 +209,21 @@
 				04400AB220E9DD7400B6FEC4 /* Table.swift */,
 			);
 			path = "League Classes";
+			sourceTree = "<group>";
+		};
+		0479B432232A1504001AE5DA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0479B433232A150E001AE5DA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0479B434232A15AA001AE5DA /* CowtownSoccerLogo.gif */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		04C16C0F208715BA007D5BF9 /* Team classes */ = {
@@ -374,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0479B435232A15AA001AE5DA /* CowtownSoccerLogo.gif in Resources */,
 				04231D49207DB42E005F34E4 /* LaunchScreen.storyboard in Resources */,
 				0401635222F9F4D2001F72F9 /* GoogleService-Info.plist in Resources */,
 				04231D46207DB42E005F34E4 /* Assets.xcassets in Resources */,

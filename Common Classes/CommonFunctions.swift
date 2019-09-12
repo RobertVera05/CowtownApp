@@ -46,7 +46,7 @@ class CommonFunctions
     ///Function to add a player to the firebase database
     static func addNewUser(email: String, password: String)
     {
-        Auth.auth().signIn(withEmail: email, password: password, completion: nil)
+        Auth.auth().createUser(withEmail: email, password: password, completion: nil)
     }
     
     ///Function to sign in a player into the firebase database
